@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Helvetica;
+    width: 90%;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
+
+.header { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    margin: 20px;
+}
+
+.header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-div {
+    float: left;
+}
+
+
+
+.header-div img {
+    max-width: 200px;
+    height: 60px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+}
+
+.card {
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    padding: 3px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.fa-star{
+    color: grey;
+}
+.checked {
+    color: #8bc34a;
+}
+.card-text{
+    margin: 0 20px;
+}
+.card-text p{
+    color:#697070;
+}
+.card-com-star{
+    display: flex;
+    justify-content: space-between;
+}
+.card-star p{
+    margin: 0 10px 0 0;
+}
+
+
+.card-star{
+    display: flex;
+    margin: 0 20px 10px;
+}
+.card-star{
+    display: flex;
+
+}
+.card-comment{
+    display: flex;
+    margin: 0 10px;
+
+}
+.card-comment p{
+    margin: 0 0 0 10px;
+}
+.fa-comment{
+    color:#6eb92b;
+}
+img {
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+h3{
+    color: #6eb92b;
+    font-size : 24px; 
+    font-weight: 400px;
+}
+.card-autor{
+     font-size: 16px; 
+    font-weight: 200px;
+}
+.pad-left{
+    padding-left:60px;
+}
+input{
+    border-radius: 5px;
+}
+.input-btn{
+    background-color: #6eb92b;
+    color:#FFFFFF;
+}
+@media only screen and (max-width: 1200px) {
+    /* For tablets: */
+    .card {
+        width: 48%;
+    }
+    .input-text {width: 100%}
+
+}
+@media only screen and (max-width: 600px) {
+    /* For mobile: */
+    .card {
+        width: 100%;
+    }
+    .input-text {width: 100%}
+
+}
